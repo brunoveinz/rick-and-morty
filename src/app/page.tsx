@@ -1,10 +1,8 @@
 import PresentationTextCard from "@/components/home/presentation-text-card";
-import PrincipalHeader from "@/components/shared/navbars/principal-navbar"
 
 export default function Home() {
   return (
     <>
-      <PrincipalHeader/>
       <div>
         <div>
           <PresentationTextCard 

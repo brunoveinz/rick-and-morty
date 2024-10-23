@@ -18,7 +18,9 @@ const config: Config = {
         mortyOrange: colors.mortyOrange,
         alienPurple: colors.alienPurple,
         spaceGray: colors.spaceGray
-
+      },
+      fontFamily: {
+        rick: ['Get Schwifty', 'sans-serif'], // Extiende la fuente
       },
     },
   },

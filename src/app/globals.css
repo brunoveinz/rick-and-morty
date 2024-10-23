@@ -25,3 +25,10 @@ body {
     text-wrap: balance;
   }
 }
+
+@font-face {
+  font-family: 'Get Schwifty';
+  src: url('../app/fonts/Creepster-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
