@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import Link from "next/link"
+import Button from "../buttons/button"
 
 const navItems = [
   { name: "Personajes", href: "/personajes" },
@@ -16,7 +17,7 @@ export default function PrincipalHeader() {
   }
 
   return (
-    <header className="bg-purple-500 shadow-sm">
+    <header className="bg-purple-800 shadow-sm">
       <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8" aria-label="Top">
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center">
@@ -32,7 +33,7 @@ export default function PrincipalHeader() {
                 href={item.href}
                 className="text-white font-medium text-gray-500 hover:text-gray-900"
               >
-                {item.name}
+                <Button title={item.name} color="green"/>
               </Link>
             ))}
           </div>
