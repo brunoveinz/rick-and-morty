@@ -2,7 +2,7 @@ import React from 'react';
 
 type ButtonProps = {
   title: string;
-  color: 'red' | 'blue' | 'green'; // Limitar los colores válidos.
+  color: 'red' | 'blue' | 'green' | 'purple'; // Limitar los colores válidos.
 };
 
 const Button: React.FC<ButtonProps> = ({ title, color }) => {
@@ -13,12 +13,13 @@ const Button: React.FC<ButtonProps> = ({ title, color }) => {
     red: "bg-red-500",
     blue: "bg-blue-500",
     green: "bg-green-500",
+    purple: "bg-alienPurple"
   };
 
   return (
-    <div className={`${baseClasses} ${colorClasses[color]}`} role="button">
+    <button className={`${baseClasses} ${colorClasses[color]}`} role="button">
       {title}
-    </div>
+    </button>
   );
 };
 

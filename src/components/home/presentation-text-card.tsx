@@ -9,9 +9,11 @@ export default function PresentationTextCard({ title, text }: PresentationProps)
     <div className="max-w-sm shadow-lg rounded-lg">
       <div className="px-6 py-4">
         <div className="text-center">
-          <h2 className="font-rick text-4xl mb-2 text-white">{title}</h2>
+          <h2 className="font-rick text-5xl mb-2 text-white">{title}</h2>
         </div>
-        <p className="text-white text-base font-rick">{text}</p>
+        <div className="mt-5">
+          <p className="text-white text-2xl text-base font-rick text-portalGreen text-center">{text}</p>
+        </div>
       </div>
     </div>
   )
