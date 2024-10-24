@@ -1,8 +1,9 @@
+import Title from "@/components/shared/title"
 
 export default function Capitulos(){
     return(
         <>
-            <h1>Capitulos</h1>
+        <Title title="Capitulos"/>
         </>
     )
 }
