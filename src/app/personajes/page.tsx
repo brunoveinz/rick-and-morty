@@ -18,7 +18,7 @@ export default function Home() {
       <Title title="Personajes" />
 
       <div className="grid grid-cols-12">
-        <div className="col-span-6">
+      <div className="col-span-6">
           <Suspense fallback={<Loading/>}>
             <Characters />
           </Suspense>
