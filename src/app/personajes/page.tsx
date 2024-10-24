@@ -4,6 +4,9 @@ import CharacterList from "@/components/personajes/list";
 import { getCharacters } from "@/actions/personajes/personajes.actions";
 import Loading from "../loading";
 
+export const dynamic = 'force-dynamic'
+
+
 const Characters = async () => {
   const characters = await getCharacters();
   return <CharacterList characters={characters} />;
