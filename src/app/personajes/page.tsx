@@ -2,6 +2,7 @@ import { Suspense } from "react";
 import Title from "@/components/shared/title";
 import CharacterList from "@/components/personajes/list";
 import { getCharacters } from "@/actions/personajes/personajes.actions";
+import Loading from "../loading";
 
 const Characters = async () => {
   const characters = await getCharacters();
@@ -15,7 +16,7 @@ export default function Home() {
 
       <div className="grid grid-cols-12">
         <div className="col-span-6">
-          <Suspense fallback={<p>Cargando personajes...</p>}>
+          <Suspense fallback={<Loading/>}>
             <Characters />
           </Suspense>
         </div>

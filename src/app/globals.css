@@ -32,3 +32,24 @@ body {
   font-weight: normal;
   font-style: normal;
 }
+
+
+/* Spinner.css */
+
+.spinner {
+  border: 8px solid rgba(255, 255, 255, 0.1); /* Borde blanco semi-transparente */
+  border-top: 8px solid greenyellow; /* Color del borde superior */
+  border-radius: 50%; /* Hace que sea un círculo */
+  width: 60px; /* Ancho del spinner */
+  height: 60px; /* Alto del spinner */
+  animation: spin 1s linear infinite; /* Animación de giro */
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); /* Comienza sin rotación */
+  }
+  100% {
+    transform: rotate(360deg); /* Rota 360 grados */
+  }
+}
